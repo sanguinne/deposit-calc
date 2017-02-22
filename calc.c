@@ -1,18 +1,18 @@
-#include <stdio.h>
+include <stdio.h>
 
 int main()
 {
-    int sum, days;
-    printf("Введите сумму вклада:\n");
-    scanf("%d", &sum);
-    printf("Введите срок:\n");
+    float sum, income, result;
+    unsigned int days;
+    printf("Введите сумму, которую хотите положить на счет\n");
+    scanf("%f", &sum);
+    while (sum < 1000) {
+        printf("Сумма вклада не может быть меньше 1000 рублей. Попробуйте еще раз.\n");
+        scanf("%f", &sum);
+    }
+    printf("Окей, теперь введите срок вклада.\n");
     scanf("%d", &days);
-    if (sum < 1000) {
-        printf("Сумма вклада не может быть меньше 1000");
+    while (days > 365) {
+        printf("Срок вклада не может быть отрицательным или превышать 365 дней. Попробуйте еще раз.\n");
+        scanf("%d", &days);
     }
-    if (days > 365) {
-        printf("Срок вклада не может превышать 365 дней");
-    }
-    
-    return 0;
-} 
