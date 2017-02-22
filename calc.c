@@ -1,4 +1,4 @@
-include <stdio.h>
+#include <stdio.h>
 
 int main()
 {
@@ -16,3 +16,4 @@ int main()
         printf("Срок вклада не может быть отрицательным или превышать 365 дней. Попробуйте еще раз.\n");
         scanf("%d", &days);
     }
+}
