@@ -1,3 +1,4 @@
+.PHONY: clean
 bin/calc: build/deposit.o build/main.o
 	gcc -Wall -Werror -o bin/calc build/deposit.o build/main.o
 build/main.o: src/main.c
