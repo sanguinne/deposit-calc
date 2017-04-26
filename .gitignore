@@ -1,1 +1,5 @@
-!/deposit-calc/calc.c
+!/deposit-calc/src/
+!/deposit-calc/bin/
+!/deposit-calc/build/
+!/deposit-calc/README.md
+!/deposit-calc/Makefile
