@@ -1,27 +1,15 @@
 #include <stdio.h>
 #include "deposit.h"
 
-void correct_data (float* sum, unsigned int* days) {
-    float summa;
-    unsigned int day;
-    printf("Введите сумму, которую хотите положить на счет\n");
-    scanf("%f", &summa);
-    while (summa < 10000) {
-        printf("Сумма вклада не может быть меньше 10000 рублей. Попробуйте еще раз.\n");
-        scanf("%f", &summa);
+int correct_data (double sum, unsigned int days) {
+    if ((sum < 10000) || (days > 365)) {
+        return -1;
     }
-    printf("Окей, теперь введите срок вклада.\n");
-    scanf("%d", &day);
-    while (day > 365) {
-        printf("Срок вклада не может быть отрицательным или превышать 365 дней. Попробуйте еще раз.\n");
-        scanf("%d", &day);
-    }
-    *sum = summa;
-    *days = day;
+    return 0;
 }
 
-float calcularing (float sum, unsigned int days) {
-    float income;
+double calcularing (double sum, unsigned int days) {
+    double income;
     if (sum <= 10000) {
         if (days < 31) {
             income = sum / 10;

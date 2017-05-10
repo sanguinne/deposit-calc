@@ -1,7 +1,7 @@
 #ifndef CALC_H
 #define CALC_H
 
-void correct_data (float* sum, unsigned int* days);
-float calcularing (float sum, unsigned int days);
+int correct_data (double sum, unsigned int days);
+double calcularing (double sum, unsigned int days);
 
 #endif
