@@ -9,7 +9,7 @@ CTEST(arithmetic_suite, calc)
     const double result = calcularing(a, b);
     
     const double expected = 84800;
-    ASSERT_DBL_NEAR(expected, result);
+    ASSERT_DBL_NEAR_TOL(expected, result, 1);
 }
 CTEST(arithmetic_suite, calc1)
 {
@@ -19,7 +19,7 @@ CTEST(arithmetic_suite, calc1)
     const double result = calcularing(a, b);
 
     const double expected = 72000;
-    ASSERT_DBL_NEAR(expected, result);
+    ASSERT_DBL_NEAR_TOL(expected, result, 1);
 }
 CTEST(arithmetic_suite, calc2)
 {
@@ -29,7 +29,7 @@ CTEST(arithmetic_suite, calc2)
     const double result = calcularing(a, b);
 
     const double expected = 84800;
-    ASSERT_DBL_NEAR(expected, result);
+    ASSERT_DBL_NEAR_TOL(expected, result, 1);
 }
 CTEST(arithmetic_suite, calc3)
 {
@@ -39,7 +39,7 @@ CTEST(arithmetic_suite, calc3)
     const double result = calcularing(a, b);
 
     const double expected = 81600;
-    ASSERT_DBL_NEAR(expected, result);
+    ASSERT_DBL_NEAR_TOL(expected, result, 1);
 }
 CTEST(arithmetic_suite, calc4)
 {
@@ -49,7 +49,7 @@ CTEST(arithmetic_suite, calc4)
     const double result = calcularing(a, b);
 
     const double expected = 89600;
-    ASSERT_DBL_NEAR(expected, result);
+    ASSERT_DBL_NEAR_TOL(expected, result, 1);
 }
 CTEST(arithmetic_suite, calc5)
 {
@@ -59,7 +59,7 @@ CTEST(arithmetic_suite, calc5)
     const double result = calcularing(a, b);
 
     const double expected = 720000;
-    ASSERT_DBL_NEAR(expected, result);
+    ASSERT_DBL_NEAR_TOL(expected, result, 1);
 }
 CTEST(arithmetic_suite, calc6)
 {
@@ -69,7 +69,7 @@ CTEST(arithmetic_suite, calc6)
     const double result = calcularing(a, b);
 
     const double expected = 824000;
-    ASSERT_DBL_NEAR(expected, result);
+    ASSERT_DBL_NEAR_TOL(expected, result, 1);
 }
 CTEST(arithmetic_suite, calc7)
 {
@@ -79,7 +79,7 @@ CTEST(arithmetic_suite, calc7)
     const double result = calcularing(a, b);
 
     const double expected = 864000;
-    ASSERT_DBL_NEAR(expected, result);
+    ASSERT_DBL_NEAR_TOL(expected, result, 1);
 }
 CTEST(arithmetic_suite, calc8)
 {
@@ -89,5 +89,5 @@ CTEST(arithmetic_suite, calc8)
     const double result = calcularing(a, b);
 
     const double expected = 920000;
-    ASSERT_DBL_NEAR(expected, result);
+    ASSERT_DBL_NEAR_TOL(expected, result, 1);
 }

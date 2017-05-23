@@ -10,7 +10,7 @@ int correct_data (double sum, unsigned int days) {
 
 double calcularing (double sum, unsigned int days) {
     double income;
-    if (sum <= 10000) {
+    if (sum <= 100000) {
         if (days < 31) {
             income = sum / 10;
             return sum - income;
