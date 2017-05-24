@@ -14,33 +14,6 @@ env:
       # SAUCE_USERNAME
     - secure: "YOUR_ENCRYPTED_SAUCE_USERNAME" # if you want to use SauceLabs
   matrix:
-    - TARGET=neko 
-      # optional: FILENAME
-    - TARGET=interp
-    - TARGET=macro
-      # optional: MACROFLAGS: specify the flags that are unique to building/running with --macro arguments
-    - TARGET=js TOOLCHAIN=default # target is tested by node.js
-      # optional: FILENAME
-      # optional: NODECMD: set the command to be run by nodejs
-    - TARGET=js TOOLCHAIN=browser # target is tested by browsers / phantomjs
-      # optional: FILENAME
-      # optional: SAUCE_BROWSERS: specify the .json file that specifies the SauceLabs browsers to test. Defaults to `.sauce-browsers.json`
-    - TARGET=php
-      # optional: FILENAME
-    - TARGET=cpp
-      # optional: FILENAME
-    - TARGET=swf
-      # optional: FILENAME
-    - TARGET=as3 
-      # optional: FILENAME
-    - TARGET=java
-      # optional: FILENAME
-    - TARGET=cs
-      # optional: FILENAME
-    - TARGET=python
-      # optional: FILENAME
-      # optional: PYTHONCMD
-
 matrix:
   fast_finish: true
   allow_failures:
