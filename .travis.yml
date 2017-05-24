@@ -1,20 +1,7 @@
-language: c # change this to objective-c to test on a mac machine
+language: c 
 
-env:
-  global:
-  matrix:
-matrix:
-  fast_finish: true
-
-before_install: # clone travis-hx repo
-  - travis_retry git clone --depth=50 --branch=master git://github.com/waneck/travis-hx.git ~/travis-hx
-
-install: # setup the target
-  - ~/travis-hx/setup.sh
+install:
+  - make
 
 script:
-  - cd $TRAVIS_BUILD_DIR
-  # build the target. This will call haxe with the HXFLAGS and HXFLAGS_EXTRA environment variables
-  - HXFLAGS="make test" ~/travis-hx/build.sh
-  # run the tests
-  - ~/travis-hx/runtests.sh $FILENAME # this will set the $FILENAME defined on the environment variable to run the tests
+  - make test
