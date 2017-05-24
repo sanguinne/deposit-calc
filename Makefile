@@ -16,5 +16,6 @@ $(BTEST)deposit_test.o: test/deposit_test.c
 $(BTEST)validation.o: test/validation_test.c
 	gcc -I thirdparty -I src -c test/validation_test.c -o $(BTEST)validation.o
 test: bin/deposit-calc-test
+bin: bin/deposit-calc
 clean:
 	rm -rf $(BSRC)*.o bin/*
