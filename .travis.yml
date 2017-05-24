@@ -1,7 +1,7 @@
 language: c 
 
 install:
-  - make
+  - make bin
 
 script:
   - make test
